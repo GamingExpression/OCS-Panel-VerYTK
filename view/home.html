@@ -1,0 +1,68 @@
+<a href="http://t.me/YakuzaTK">  <img src="https://i.imgur.com/EQSmyaO.png"/><br><br></a>
+<div id="wrapper"> 
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 20%"> <font> <marquee direction="left" scrollamount="4" style="color: #ffde00; rows: 5
+     background:#A9F5F2; font-size: 25px">Welcome to YakuzaTK Reseller ! <a style="color: #ff059e; rows: 5
+       background:#A9F5F2; font-size: 25px">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Thank you for registered with us ! </a>
+           <a style="color: #00aff0; rows: 5
+              background:#00EFFF; font-size: 25px">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Server Unlimited DATA + Low Ping + Stable Connection </a>
+                </marquee></font>
+        <div class="navbar-header">
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">  
+          <b style="color: black" class="fa fa-shield"><strong> Menu</strong></b>        
+          </button>
+      </div>
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search">
+                        <div class="row">
+                            <div class="col-xs-5">
+                                <span class="fa-stack fa-3x">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </div>
+                            <div class="col-xs-7">
+                                <h4><b>{{ @me->username }}</b></h4>
+                                <h4 class="text-muted">{{ @me->type==1?'Administrator':'<marquee direction="down" scrollamount="4" style="color: #ff059e">You are registered in 1Malaysia Trickers Reseller !</marquee>' }}</h4>
+                            </div>
+                    </li>
+                    <check if="{{ @me->type==1 }}">
+                        <true>
+                            <li>
+                                <a href="/home/admin/server"><i class="fa fa-cloud fa-fw"></i> Server</a>
+                            </li>
+                            <li>
+                                <a href="/home/admin/seller"><i class="fa fa-check-circle fa-fw"></i> Reseller</a>
+                            </li>
+                        </true>
+                        <false>  
+                          <li>
+                                <a href="/home/member/server"><i class="fa fa-dashboard fa-fw"></i> Create ID</a>
+                            </li>
+						  <li>
+                                <a href="https://telegram.me/Deb_ResellerBot"><i class="fa fa-dashboard fa-fw"></i> Download Config</a>
+                            </li>
+						  <li>
+                                <a href="http://t.me/YakuzaTK"><i class="fa fa-dashboard fa-fw"></i> Add [RM] Balance</a>
+                            </li>
+						 <li> 
+								<a href="https://www.youtube.com/c/MuhdAfiqIrsyad"><i class="fa fa-youtube- square fa-fw"></i>  Subscribe on YouTube</a> 
+                           </li> 
+                        </false>
+                    </check>
+                    <li>
+                        <a href="/home/setting"><i class="fa fa-cog fa-spin"></i> Change Code</a>
+                    </li>
+                    <li>
+                        <a href="/logout"><i class="fa fa-sign-out"></i> Log Out</a>
+                    </li>
+                 
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <include href="{{ @subcontent }}"/>
+</div>
+
+<a href="http://t.me/YakuzaTK">  <img src="https://i.imgur.com/EQSmyaO.png"/><br><br></a>
